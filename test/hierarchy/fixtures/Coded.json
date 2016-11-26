@@ -1,19 +1,19 @@
 {
-  "name": "SHR",
+  "label": "SHR",
   "type": "SHR",
   "children": [
     {
-      "name": "shr.test",
+      "label": "shr.test",
       "type": "Namespace",
       "children": [
        {
           "concepts": [],
           "description": "It is a coded element",
           "isEntry": true,
-          "name": "Coded",
+          "label": "Coded",
           "type": "DataElement",
           "value": {
-            "name": "code from http://standardhealthrecord.org/test/vs/Coded",
+            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
             "type": "CodeFromValueSetValue",
             "valueset": "http://standardhealthrecord.org/test/vs/Coded"
           }

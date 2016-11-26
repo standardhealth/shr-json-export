@@ -1,14 +1,14 @@
 {
-  "name": "SHR",
+  "label": "SHR",
   "type": "SHR",
   "children": [
     {
-      "name": "shr.test",
+      "label": "shr.test",
       "type": "Namespace",
       "children": [
 		{
 		  "type": "Group",
-		  "name": "GroupPathClash",
+		  "label": "GroupPathClash",
 		  "isEntry": true,
 		  "concepts": [],
 		  "description": "It is a group of elements with clashing names",
@@ -18,10 +18,10 @@
               "min": 1,
 			  "max": 1,
               "value": {
-                "name": "shr.test:Simple",
+                "label": "shr.test:Simple",
                 "type": "Value",
                 "identifier": {
-                  "name": "Simple",
+                  "label": "Simple",
                   "type": "Identifier",
                   "namespace": "shr.test"
                 }
@@ -32,10 +32,10 @@
               "min": 0,
 			  "max": 1,
               "value": {
-                "name": "shr.other.test:Simple",
+                "label": "shr.other.test:Simple",
                 "type": "Value",
                 "identifier": {
-                  "name": "Simple",
+                  "label": "Simple",
                   "type": "Identifier",
                   "namespace": "shr.other.test"
                 }
@@ -45,11 +45,11 @@
 		},
 		{
 		  "type": "DataElement",
-		  "name": "Simple",
+		  "label": "Simple",
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "name": "http://foo.org:bar",
+			  "label": "http://foo.org:bar",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
@@ -59,10 +59,10 @@
 		  ],
 		  "description": "It is a simple element",
 		  "value": {
-			"name": "primitive:string",
+			"label": "primitive:string",
 			"type": "Value",
 			"identifier": {
-			  "name": "string",
+			  "label": "string",
 			  "type": "Identifier",
 			  "namespace": "primitive"
 			}
@@ -71,16 +71,16 @@
 	  ]
 	},
     {
-      "name": "shr.other.test",
+      "label": "shr.other.test",
       "type": "Namespace",
       "children": [
 		{
 		  "type": "DataElement",
-		  "name": "Simple",
+		  "label": "Simple",
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "name": "http://foo.org:bar",
+			  "label": "http://foo.org:bar",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
@@ -90,10 +90,10 @@
 		  ],
 		  "description": "It is a simple element",
 		  "value": {
-			"name": "primitive:string",
+			"label": "primitive:string",
 			"type": "Value",
 			"identifier": {
-			  "name": "string",
+			  "label": "string",
 			  "type": "Identifier",
 			  "namespace": "primitive"
 			}

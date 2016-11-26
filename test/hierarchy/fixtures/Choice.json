@@ -1,14 +1,14 @@
 {
-  "name": "SHR",
+  "label": "SHR",
   "type": "SHR",
   "children": [
     {
-      "name": "shr.test",
+      "label": "shr.test",
       "type": "Namespace",
       "children": [
 		{
 		  "type": "DataElement",
-		  "name": "Choice",
+		  "label": "Choice",
 		  "isEntry": true,
 		  "concepts": [
 		  ],
@@ -17,10 +17,10 @@
 			"type": "OrValues",
 			"values": [
 			  {
-				"name": "primitive:string",
+				"label": "primitive:string",
 				"type": "Value",
 				"identifier": {
-				  "name": "string",
+				  "label": "string",
 				  "type": "Identifier",
 				  "namespace": "primitive"
 				}
@@ -30,11 +30,11 @@
 				"min": 0,
 				"value": {
                   "identifier": {
-                    "name": "code",
+                    "label": "code",
                     "namespace": "primitive",
                     "type": "Identifier"
                   },
-                  "name": "primitive:code",
+                  "label": "primitive:code",
                   "type": "Value"
 				}
 			  },
@@ -43,10 +43,10 @@
 				"min": 1,
 				"max": 1,
 				"value": {
-				  "name": "shr.test:Coded",
+				  "label": "shr.test:Coded",
 				  "type": "Value",
 				  "identifier": {
-					"name": "Coded",
+					"label": "Coded",
 					"type": "Identifier",
 					"namespace": "shr.test"
 				  }
@@ -59,10 +59,10 @@
           "concepts": [],
           "description": "It is a coded element",
           "isEntry": true,
-          "name": "Coded",
+          "label": "Coded",
           "type": "DataElement",
           "value": {
-            "name": "code from http://standardhealthrecord.org/test/vs/Coded",
+            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
             "type": "CodeFromValueSetValue",
             "valueset": "http://standardhealthrecord.org/test/vs/Coded"
           }

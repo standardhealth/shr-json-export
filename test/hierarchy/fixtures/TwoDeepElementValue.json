@@ -1,22 +1,22 @@
 {
-  "name": "SHR",
+  "label": "SHR",
   "type": "SHR",
   "children": [
     {
-      "name": "shr.test",
+      "label": "shr.test",
       "type": "Namespace",
       "children": [
 {
   "type": "DataElement",
-  "name": "ElementValue",
+  "label": "ElementValue",
   "isEntry": true,
   "concepts": [],
   "description": "It is an element with an element value",
   "value": {
-	"name": "shr.test:Simple",
+	"label": "shr.test:Simple",
 	"type": "Value",
 	"identifier": {
-	  "name": "Simple",
+	  "label": "Simple",
 	  "type": "Identifier",
 	  "namespace": "shr.test"
 	}
@@ -24,11 +24,11 @@
 },
 {
   "type": "DataElement",
-  "name": "Simple",
+  "label": "Simple",
   "isEntry": true,
   "concepts": [
     {
-	  "name": "http://foo.org:bar",
+	  "label": "http://foo.org:bar",
 	  "type": "Concept",
 	  "codesystem": "http://foo.org",
 	  "code": "bar",
@@ -37,10 +37,10 @@
   ],
   "description": "It is a simple element",
   "value": {
-	"name": "primitive:string",
+	"label": "primitive:string",
 	"type": "Value",
 	"identifier": {
-	  "name": "string",
+	  "label": "string",
 	  "type": "Identifier",
 	  "namespace": "primitive"
 	}
@@ -48,15 +48,15 @@
 },
 {
   "type": "DataElement",
-  "name": "TwoDeepElementValue",
+  "label": "TwoDeepElementValue",
   "isEntry": true,
   "concepts": [],
   "description": "It is an element with a two-deep element value",
   "value": {
-	"name": "shr.test:ElementValue",
+	"label": "shr.test:ElementValue",
 	"type": "Value",
 	"identifier": {
-	  "name": "ElementValue",
+	  "label": "ElementValue",
 	  "type": "Identifier",
 	  "namespace": "shr.test"
 	}
