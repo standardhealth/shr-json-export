@@ -1,0 +1,105 @@
+{
+  "name": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "name": "shr.test",
+      "type": "Namespace",
+      "children": [
+		{
+		  "type": "Group",
+		  "name": "GroupPathClash",
+		  "isEntry": true,
+		  "concepts": [],
+		  "description": "It is a group of elements with clashing names",
+		  "children": [
+            {
+              "type": "QuantifiedValue",
+              "min": 1,
+			  "max": 1,
+              "value": {
+                "name": "shr.test:Simple",
+                "type": "Value",
+                "identifier": {
+                  "name": "Simple",
+                  "type": "Identifier",
+                  "namespace": "shr.test"
+                }
+              }
+            },
+            {
+              "type": "QuantifiedValue",
+              "min": 0,
+			  "max": 1,
+              "value": {
+                "name": "shr.other.test:Simple",
+                "type": "Value",
+                "identifier": {
+                  "name": "Simple",
+                  "type": "Identifier",
+                  "namespace": "shr.other.test"
+                }
+              }
+            }
+		  ]
+		},
+		{
+		  "type": "DataElement",
+		  "name": "Simple",
+		  "isEntry": true,
+		  "concepts": [
+			{
+			  "name": "http://foo.org:bar",
+			  "type": "Concept",
+			  "codesystem": "http://foo.org",
+			  "code": "bar",
+			  "url": "http://foo.org/bar"
+			}
+
+		  ],
+		  "description": "It is a simple element",
+		  "value": {
+			"name": "primitive:string",
+			"type": "Value",
+			"identifier": {
+			  "name": "string",
+			  "type": "Identifier",
+			  "namespace": "primitive"
+			}
+		  }
+		}
+	  ]
+	},
+    {
+      "name": "shr.other.test",
+      "type": "Namespace",
+      "children": [
+		{
+		  "type": "DataElement",
+		  "name": "Simple",
+		  "isEntry": true,
+		  "concepts": [
+			{
+			  "name": "http://foo.org:bar",
+			  "type": "Concept",
+			  "codesystem": "http://foo.org",
+			  "code": "bar",
+			  "url": "http://foo.org/bar"
+			}
+
+		  ],
+		  "description": "It is a simple element",
+		  "value": {
+			"name": "primitive:string",
+			"type": "Value",
+			"identifier": {
+			  "name": "string",
+			  "type": "Identifier",
+			  "namespace": "primitive"
+			}
+		  }
+		}
+	  ]
+	}
+  ]
+}

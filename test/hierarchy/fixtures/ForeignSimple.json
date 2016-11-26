@@ -1,0 +1,37 @@
+{
+  "name": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "name": "shr.other.test",
+      "type": "Namespace",
+      "children": [
+{
+  "type": "DataElement",
+  "name": "Simple",
+  "isEntry": true,
+  "concepts": [
+    {
+	  "name": "http://foo.org:bar",
+	  "type": "Concept",
+	  "codesystem": "http://foo.org",
+	  "code": "bar",
+	  "url": "http://foo.org/bar"
+	}
+
+  ],
+  "description": "It is a simple element",
+  "value": {
+	"name": "primitive:string",
+	"type": "Value",
+	"identifier": {
+	  "name": "string",
+	  "type": "Identifier",
+	  "namespace": "primitive"
+	}
+  }
+}
+	  ]
+	}
+  ]
+}

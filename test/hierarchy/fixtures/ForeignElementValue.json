@@ -1,0 +1,59 @@
+{
+  "name": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "name": "shr.test",
+      "type": "Namespace",
+      "children": [
+{
+  "type": "DataElement",
+  "name": "ForeignElementValue",
+  "isEntry": true,
+  "concepts": [],
+  "description": "It is an element with a foreign element value",
+  "value": {
+	"name": "shr.other.test:Simple",
+	"type": "Value",
+	"identifier": {
+	  "name": "Simple",
+	  "type": "Identifier",
+	  "namespace": "shr.other.test"
+	}
+  }
+}
+	  ]
+	},
+	{
+      "name": "shr.other.test",
+      "type": "Namespace",
+      "children": [
+{
+  "type": "DataElement",
+  "name": "Simple",
+  "isEntry": true,
+  "concepts": [
+    {
+	  "name": "http://foo.org:bar",
+	  "type": "Concept",
+	  "codesystem": "http://foo.org",
+	  "code": "bar",
+	  "url": "http://foo.org/bar"
+	}
+
+  ],
+  "description": "It is a simple element",
+  "value": {
+	"name": "primitive:string",
+	"type": "Value",
+	"identifier": {
+	  "name": "string",
+	  "type": "Identifier",
+	  "namespace": "primitive"
+	}
+  }
+}
+	  ]
+	}
+  ]
+}
