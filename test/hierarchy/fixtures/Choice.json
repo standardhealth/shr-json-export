@@ -1,0 +1,73 @@
+{
+  "label": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "label": "shr.test",
+      "type": "Namespace",
+      "children": [
+		{
+		  "type": "DataElement",
+		  "label": "Choice",
+		  "isEntry": true,
+		  "concepts": [
+		  ],
+		  "description": "It is an element with a choice",
+		  "value": {
+			"type": "OrValues",
+			"values": [
+			  {
+				"label": "primitive:string",
+				"type": "Value",
+				"identifier": {
+				  "label": "string",
+				  "type": "Identifier",
+				  "namespace": "primitive"
+				}
+			  },
+			  {
+				"type": "QuantifiedValue",
+				"min": 0,
+				"value": {
+                  "identifier": {
+                    "label": "code",
+                    "namespace": "primitive",
+                    "type": "Identifier"
+                  },
+                  "label": "primitive:code",
+                  "type": "Value"
+				}
+			  },
+			  {
+				"type": "QuantifiedValue",
+				"min": 1,
+				"max": 1,
+				"value": {
+				  "label": "shr.test:Coded",
+				  "type": "Value",
+				  "identifier": {
+					"label": "Coded",
+					"type": "Identifier",
+					"namespace": "shr.test"
+				  }
+				}
+			  }
+			]
+		  }
+		},
+        {
+          "concepts": [],
+          "description": "It is a coded element",
+          "isEntry": true,
+          "label": "Coded",
+          "type": "DataElement",
+          "value": {
+            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
+            "type": "CodeFromValueSetValue",
+            "valueset": "http://standardhealthrecord.org/test/vs/Coded"
+          }
+        }	
+	  ]
+	}
+  ]
+}

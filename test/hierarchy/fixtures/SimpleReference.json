@@ -1,0 +1,28 @@
+{
+  "label": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "label": "shr.test",
+      "type": "Namespace",
+      "children": [
+{
+  "type": "DataElement",
+  "label": "SimpleReference",
+  "isEntry": true,
+  "concepts": [],
+  "description": "It is a reference to a simple element",
+  "value": {
+	"label": "shr.test:Simple",
+	"type": "RefValue",
+	"identifier": {
+	  "label": "Simple",
+	  "type": "Identifier",
+	  "namespace": "shr.test"
+	}
+  }
+}
+	  ]
+	}
+  ]
+}

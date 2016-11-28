@@ -1,0 +1,214 @@
+{
+  "label": "SHR",
+  "type": "SHR",
+  "children": [
+    {
+      "label": "shr.test",
+      "type": "Namespace",
+      "children": [
+        {
+          "type": "DataElement",
+          "label": "Coded",
+          "isEntry": true,
+          "concepts": [],
+          "description": "It is a coded element",
+          "value": {
+            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
+            "type": "CodeFromValueSetValue",
+            "valueset": "http://standardhealthrecord.org/test/vs/Coded"
+          }
+        },
+		{
+		  "type": "DataElement",
+		  "label": "ElementValue",
+		  "isEntry": true,
+		  "concepts": [],
+		  "description": "It is an element with an element value",
+		  "value": {
+			"label": "shr.test:Simple",
+			"type": "Value",
+			"identifier": {
+			  "label": "Simple",
+			  "type": "Identifier",
+			  "namespace": "shr.test"
+			}
+		  }
+		},
+		{
+		  "type": "DataElement",
+		  "label": "ForeignElementValue",
+		  "isEntry": true,
+		  "concepts": [],
+		  "description": "It is an element with a foreign element value",
+		  "value": {
+			"label": "shr.other.test:Simple",
+			"type": "Value",
+			"identifier": {
+			  "label": "Simple",
+			  "type": "Identifier",
+			  "namespace": "shr.other.test"
+			}
+		  }
+		},
+		{
+		  "type": "Group",
+		  "label": "Group",
+		  "isEntry": true,
+		  "concepts": [
+			{
+			  "label": "http://foo.org:bar",
+			  "type": "Concept",
+			  "codesystem": "http://foo.org",
+			  "code": "bar",
+			  "url": "http://foo.org/bar"
+			},
+			{
+			  "label": "http://boo.org:far",
+			  "type": "Concept",
+			  "codesystem": "http://boo.org",
+			  "code": "far",
+			  "url": "http://boo.org/far"
+			}
+		  ],
+		  "description": "It is a group of elements",
+		  "children": [
+            {
+              "type": "QuantifiedValue",
+              "min": 1,
+			  "max": 1,
+              "value": {
+                "label": "shr.test:Simple",
+                "type": "Value",
+                "identifier": {
+                  "label": "Simple",
+                  "type": "Identifier",
+                  "namespace": "shr.test"
+                }
+              }
+            },
+            {
+              "type": "QuantifiedValue",
+              "min": 0,
+			  "max": 1,
+              "value": {
+                "label": "shr.test:Coded",
+                "type": "Value",
+                "identifier": {
+                  "label": "Coded",
+                  "type": "Identifier",
+                  "namespace": "shr.test"
+                }
+              }
+            },
+            {
+              "type": "QuantifiedValue",
+              "min": 0,
+              "max": 2,
+              "value": {
+                "type": "OrValues",
+                "values": [
+					{ 	"type": "QuantifiedValue",
+						"min": 1,
+						"max": 1,
+						"value":
+						  {
+							"label": "shr.other.test:Simple",
+							"type": "Value",
+							"identifier": {
+							  "label": "Simple",
+							  "type": "Identifier",
+							  "namespace": "shr.other.test"
+							}
+						  }
+					},
+					{ 	"type": "QuantifiedValue",
+						"min": 1,
+						"value":
+						  {
+							"label": "shr.test:ForeignElementValue",
+							"type": "Value",
+							"identifier": {
+							  "label": "ForeignElementValue",
+							  "type": "Identifier",
+							  "namespace": "shr.test"
+							}
+						  }
+					}
+                ]
+              }
+            },
+            {
+              "type": "QuantifiedValue",
+              "min": 0,
+              "value": {
+                "label": "shr.test:ElementValue",
+                "type": "Value",
+                "identifier": {
+                  "label": "ElementValue",
+                  "type": "Identifier",
+                  "namespace": "shr.test"
+                }
+              }
+            }
+		  ]
+		},
+		{
+		  "type": "DataElement",
+		  "label": "Simple",
+		  "isEntry": true,
+		  "concepts": [
+			{
+			  "label": "http://foo.org:bar",
+			  "type": "Concept",
+			  "codesystem": "http://foo.org",
+			  "code": "bar",
+			  "url": "http://foo.org/bar"
+			}
+
+		  ],
+		  "description": "It is a simple element",
+		  "value": {
+			"label": "primitive:string",
+			"type": "Value",
+			"identifier": {
+			  "label": "string",
+			  "type": "Identifier",
+			  "namespace": "primitive"
+			}
+		  }
+		}
+	  ]
+	},
+    {
+      "label": "shr.other.test",
+      "type": "Namespace",
+      "children": [
+		{
+		  "type": "DataElement",
+		  "label": "Simple",
+		  "isEntry": true,
+		  "concepts": [
+			{
+			  "label": "http://foo.org:bar",
+			  "type": "Concept",
+			  "codesystem": "http://foo.org",
+			  "code": "bar",
+			  "url": "http://foo.org/bar"
+			}
+
+		  ],
+		  "description": "It is a simple element",
+		  "value": {
+			"label": "primitive:string",
+			"type": "Value",
+			"identifier": {
+			  "label": "string",
+			  "type": "Identifier",
+			  "namespace": "primitive"
+			}
+		  }
+		}
+	  ]
+	}
+  ]
+}
