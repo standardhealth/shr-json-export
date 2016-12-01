@@ -49,7 +49,7 @@
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "label": "http://foo.org:bar",
+			  "label": "Foobar (http://foo.org:bar)",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
@@ -80,7 +80,7 @@
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "label": "http://foo.org:bar",
+			  "label": "Foobar (http://foo.org:bar)",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
