@@ -63,7 +63,7 @@
 			  "url": "http://foo.org/bar"
 			},
 			{
-			  "label": "Foobar (http://foo.org:bar)",
+			  "label": "Boofar (http://boo.org:far)",
 			  "type": "Concept",
 			  "codesystem": "http://boo.org",
 			  "code": "far",
