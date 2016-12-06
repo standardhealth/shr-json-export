@@ -56,14 +56,14 @@
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "label": "http://foo.org:bar",
+			  "label": "Foobar (http://foo.org:bar)",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
 			  "url": "http://foo.org/bar"
 			},
 			{
-			  "label": "http://boo.org:far",
+			  "label": "Boofar (http://boo.org:far)",
 			  "type": "Concept",
 			  "codesystem": "http://boo.org",
 			  "code": "far",
@@ -158,7 +158,7 @@
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "label": "http://foo.org:bar",
+			  "label": "Foobar (http://foo.org:bar)",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
@@ -189,7 +189,7 @@
 		  "isEntry": true,
 		  "concepts": [
 			{
-			  "label": "http://foo.org:bar",
+			  "label": "Foobar (http://foo.org:bar)",
 			  "type": "Concept",
 			  "codesystem": "http://foo.org",
 			  "code": "bar",
