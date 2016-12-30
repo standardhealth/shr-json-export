@@ -74,27 +74,10 @@
 		},
 		{
 		  "type": "DataElement",
-		  "label": "Group",
+		  "label": "GroupWithChoiceOfChoice",
 		  "isEntry": true,
-		  "concepts": [
-			{
-			  "label": "Foobar (http://foo.org:bar)",
-			  "type": "Concept",
-			  "display" : "Foobar",
-			  "system": "http://foo.org",
-			  "code": "bar",
-			  "url": "http://foo.org/bar"
-			},
-			{
-			  "label": "Boofar (http://boo.org:far)",
-			  "type": "Concept",
-			  "display" : "Boofar",
-			  "system": "http://boo.org",
-			  "code": "far",
-			  "url": "http://boo.org/far"
-			}
-		  ],
-		  "description": "It is a group of elements",
+		  "concepts": [],
+		  "description": "It is a group of elements with a choice containing a choice",
 		  "children": [
             {
       			"constraints": [],
@@ -140,27 +123,35 @@
  					},
       				{
       					"constraints": [],
-						"identifier": {
-      						"label": "ForeignElementValue",
-      						"namespace": "shr.test",
-      						"type": "Identifier"
-						  },
- 						"label": "shr.test:ForeignElementValue",
       					"min": 1,
-      					"type": "IdentifiableValue"
+      					"max": 1,
+						"type": "ChoiceValue",
+      					"value": [
+      						{
+      							"constraints": [],
+      							"identifier": {
+									"label": "ForeignElementValue",
+      								"namespace": "shr.test",
+      								"type": "Identifier"
+      							},
+      							"label": "shr.test:ForeignElementValue",
+      							"min": 1,
+      							"type": "IdentifiableValue"
+      						},
+      						{
+      							"constraints": [],
+      							"identifier": {
+      								"label": "ElementValue",
+      								"namespace": "shr.test",
+      								"type": "Identifier"
+      							},
+      							"label": "shr.test:ElementValue",
+      							"min": 1,
+      							"type": "IdentifiableValue"
+      						}
+      					]
       				}
       			]
-            },
-            {
-				"constraints": [],
-      			"identifier": {
-      				"label": "ElementValue",
-      				"namespace": "shr.test",
-      				"type": "Identifier"
-				},
-      			"label": "shr.test:ElementValue",
-      			"min": 0,
-      			"type": "IdentifiableValue"
             }
 		  ]
 		},

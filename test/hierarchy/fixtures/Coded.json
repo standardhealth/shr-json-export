@@ -7,15 +7,29 @@
       "type": "Namespace",
       "children": [
        {
+       	  "children": [],
           "concepts": [],
           "description": "It is a coded element",
           "isEntry": true,
           "label": "Coded",
           "type": "DataElement",
           "value": {
-            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
-            "type": "CodeFromValueSetValue",
-            "valueset": "http://standardhealthrecord.org/test/vs/Coded"
+          	"constraints" : [
+          		{
+                    "path": "",
+                    "type": "ValueSetConstraint",
+ 					"valueset": "http://standardhealthrecord.org/test/vs/Coded"
+          		}
+          	],
+            "identifier": {
+            	"label": "code",
+                "namespace": "primitive",
+                "type": "Identifier"
+             },
+             "label": "primitive:code",
+             "max": 1,
+             "min": 1,
+             "type": "IdentifiableValue"
           }
         }
 	  ]

@@ -10,11 +10,13 @@
   "type": "DataElement",
   "label": "Simple",
   "isEntry": true,
+  "children" : [],
   "concepts": [
     {
 	  "label": "Foobar (http://foo.org:bar)",
+	  "display" : "Foobar",
 	  "type": "Concept",
-	  "codesystem": "http://foo.org",
+	  "system": "http://foo.org",
 	  "code": "bar",
 	  "url": "http://foo.org/bar"
 	}
@@ -23,7 +25,10 @@
   "description": "It is a simple element",
   "value": {
 	"label": "primitive:string",
-	"type": "Value",
+	"max" : 1,
+	"min" : 1,
+	"type": "IdentifiableValue",
+	"constraints" : [],
 	"identifier": {
 	  "label": "string",
 	  "type": "Identifier",

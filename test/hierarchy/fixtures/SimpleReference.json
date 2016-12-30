@@ -10,11 +10,15 @@
   "type": "DataElement",
   "label": "SimpleReference",
   "isEntry": true,
+  "children" : [],
   "concepts": [],
   "description": "It is a reference to a simple element",
   "value": {
-	"label": "shr.test:Simple",
-	"type": "RefValue",
+  	"constraints": [],
+    "label": "reference to shr.test:Simple",
+ 	"max": 1,
+    "min": 1,
+ 	"type": "RefValue",
 	"identifier": {
 	  "label": "Simple",
 	  "type": "Identifier",

@@ -10,11 +10,15 @@
   "type": "DataElement",
   "label": "ElementValue",
   "isEntry": true,
+  "children" : [],
   "concepts": [],
   "description": "It is an element with an element value",
   "value": {
 	"label": "shr.test:Simple",
-	"type": "Value",
+    "max": 1,
+    "min": 1,
+    "type": "IdentifiableValue",
+	"constraints" : [],
 	"identifier": {
 	  "label": "Simple",
 	  "type": "Identifier",
@@ -26,11 +30,13 @@
   "type": "DataElement",
   "label": "Simple",
   "isEntry": true,
+  "children" : [],
   "concepts": [
     {
 	  "label": "Foobar (http://foo.org:bar)",
 	  "type": "Concept",
-	  "codesystem": "http://foo.org",
+	  "display": "Foobar",
+	  "system": "http://foo.org",
 	  "code": "bar",
 	  "url": "http://foo.org/bar"
 	}
@@ -39,7 +45,10 @@
   "description": "It is a simple element",
   "value": {
 	"label": "primitive:string",
-	"type": "Value",
+    "max": 1,
+    "min": 1,
+    "type": "IdentifiableValue",
+	"constraints" : [],
 	"identifier": {
 	  "label": "string",
 	  "type": "Identifier",

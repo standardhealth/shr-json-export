@@ -165,6 +165,33 @@
 		  ]
 		},
 		{
+			"basedOn": [
+				{
+					"label": "Group",
+      				"namespace": "shr.test",
+      				"type": "Identifier"
+      			}
+     		],
+			"children": [],
+      		"concepts": [],
+      		"description": "It is a derivative of a group of elements",
+      		"isEntry": true,
+			"label": "GroupDerivative",
+      		"type": "DataElement",
+      		"value": {
+      			"constraints": [],
+      			"identifier": {
+      				"label": "string",
+      				"namespace": "primitive",
+      				"type": "Identifier"
+      			},
+      			"label": "primitive:string",
+      			"max": 1,
+      			"min": 1,
+      			"type": "IdentifiableValue"
+      		}
+		},
+		{
 		  "type": "DataElement",
 		  "label": "Simple",
 		  "isEntry": true,

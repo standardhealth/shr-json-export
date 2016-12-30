@@ -7,7 +7,7 @@ const {expand} = require('./lib/expander/expand');
 //const {exportToSchemas} = require('./lib/schema/export');
 const {exportToMarkdown, exportToHTML} = require('./lib/markdown/export');
 //const {exportToStructureDefinitions} = require('./lib/structdef/export');
-//const {exportToHierarchyJSON} = require('./lib/hierarchy/export');
+const {exportToHierarchyJSON} = require('./lib/hierarchy/export');
 
 
 if (process.argv.length < 3) {
@@ -24,12 +24,11 @@ for (const err of expanded.errors) {
 }
 const outDir = process.argv.length == 4 ? process.argv[3] : './out';
 
-/* COMMENTING OUT SINCE HIERARCHY HASN'T BEEN UPDATED TO NEW MODELS
 const hierarchyJSON = exportToHierarchyJSON(namespaces);
 const hierarchyPath = `${outDir}/hierarchy/hierarchy.json`;
 mkdirp.sync(hierarchyPath.substring(0, hierarchyPath.lastIndexOf('/')));
 fs.writeFileSync(hierarchyPath, JSON.stringify(hierarchyJSON, null, '  '));
-*/
+
 const exportDoc = function(namespaces, format) {
   const basePath = path.join(outDir, format);
   mkdirp.sync(basePath);

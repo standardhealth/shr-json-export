@@ -10,15 +10,22 @@
 		  "type": "DataElement",
 		  "label": "Choice",
 		  "isEntry": true,
+		  "children" : [],
 		  "concepts": [
 		  ],
 		  "description": "It is an element with a choice",
 		  "value": {
-			"type": "OrValues",
-			"values": [
+			"constraints" : [],
+		    "max": 1,
+		    "min": 1,
+		    "type": "ChoiceValue",
+			"value": [
 			  {
 				"label": "primitive:string",
-				"type": "Value",
+			    "max": 1,
+			    "min": 1,
+			    "type": "IdentifiableValue",
+				"constraints" : [],
 				"identifier": {
 				  "label": "string",
 				  "type": "Identifier",
@@ -26,31 +33,33 @@
 				}
 			  },
 			  {
-				"type": "QuantifiedValue",
+                "constraints": [
+                	{
+                    	"path": "",
+                        "type": "ValueSetConstraint",
+                        "valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
+					}
+				],
+				"identifier": {
+      				"label": "code",
+					"namespace": "primitive",
+					"type": "Identifier"
+				},
+      			"label": "primitive:code",
 				"min": 0,
-				"value": {
-                  "identifier": {
-                    "label": "code",
-                    "namespace": "primitive",
-                    "type": "Identifier"
-                  },
-                  "label": "primitive:code",
-                  "type": "Value"
-				}
+				"type": "IdentifiableValue"
 			  },
 			  {
-				"type": "QuantifiedValue",
-				"min": 1,
-				"max": 1,
-				"value": {
-				  "label": "shr.test:Coded",
-				  "type": "Value",
-				  "identifier": {
+      			"constraints": [],
+				"identifier": {
 					"label": "Coded",
-					"type": "Identifier",
-					"namespace": "shr.test"
-				  }
-				}
+					"namespace": "shr.test",
+					"type": "Identifier"
+				},
+      			"label": "shr.test:Coded",
+                "max": 1,
+				"min": 1,
+				"type": "IdentifiableValue"
 			  }
 			]
 		  }
@@ -59,13 +68,27 @@
           "concepts": [],
           "description": "It is a coded element",
           "isEntry": true,
+		  "children" : [],
           "label": "Coded",
           "type": "DataElement",
-          "value": {
-            "label": "code from http://standardhealthrecord.org/test/vs/Coded",
-            "type": "CodeFromValueSetValue",
-            "valueset": "http://standardhealthrecord.org/test/vs/Coded"
-          }
+          "value" : {
+			"constraints": [
+				{
+      				"path": "",
+					"type": "ValueSetConstraint",
+					"valueset": "http://standardhealthrecord.org/test/vs/Coded"
+				}
+		  	],
+      	  	"identifier": {
+		  		"label": "code",
+		  		"namespace": "primitive",
+				"type": "Identifier"
+		  	},
+		  	"label": "primitive:code",
+		  	"max": 1,
+		  	"min": 1,
+		  	"type": "IdentifiableValue"
+		  } 
         }	
 	  ]
 	}
