@@ -1,8 +1,8 @@
 const fs = require('fs');
-const th = require('../test_helper');
-const {exportToHierarchyJSON} = require('../../lib/hierarchy/export');
+const th = require('shr-test-helpers');
+const {exportToHierarchyJSON} = require('../lib/export');
 
-describe('#exportToHierarchyJSON()', th.commonTests(importFixture, exportNamespaces));
+describe('#exportToJSON()', th.commonExportTests(importFixture, exportNamespaces));
 
 function exportNamespaces(...namespace) {
   let hierarchy = exportToHierarchyJSON(namespace);
