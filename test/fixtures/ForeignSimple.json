@@ -3,6 +3,10 @@
   "type": "SHR",
   "children": [
     {
+      "label": "Namespaces",
+      "type": "Namespaces",
+      "children": [
+        {
       "label": "shr.other.test",
       "type": "Namespace",
       "children": [
@@ -37,6 +41,8 @@
   }
 }
 	  ]
+	}
+	]
 	}
   ]
 }
