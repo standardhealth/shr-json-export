@@ -17,12 +17,12 @@
     "lint:fix": "./node_modules/.bin/eslint . --fix"
   },
   "dependencies": {
-    "shr-models": "~4.0.0"
+    "shr-models": "standardhealth/shr-models#grammar_4_map"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.6.1",
     "mocha": "^3.2.0",
-    "shr-test-helpers": "~4.0.0"
+    "shr-test-helpers": "standardhealth/shr-test-helpers#grammar_4_map"
   }
 }
