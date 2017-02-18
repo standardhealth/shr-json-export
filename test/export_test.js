@@ -2,10 +2,10 @@ const fs = require('fs');
 const th = require('shr-test-helpers');
 const {exportToJSON} = require('../lib/export');
 
-describe('#exportToJSON()', th.commonExportTests(importFixture, exportNamespaces));
+describe('#exportToJSON()', th.commonExportTests(importFixture, exportSpecifications));
 
-function exportNamespaces(...namespace) {
-  return exportToJSON(namespace);
+function exportSpecifications(specifications) {
+  return exportToJSON(specifications);
 }
 
 function importFixture(name, ext='.json') {
