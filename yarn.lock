@@ -828,11 +828,11 @@ shelljs@^0.7.5:
 
 shr-models@standardhealth/shr-models#grammar_4_map:
   version "4.1.0"
-  resolved "https://codeload.github.com/standardhealth/shr-models/tar.gz/dd9900fc62acaa83f311c64c3938fd777c9220f0"
+  resolved "https://codeload.github.com/standardhealth/shr-models/tar.gz/d0eec67af145a7b071f860c5ec41e1e675207f90"
 
 shr-test-helpers@standardhealth/shr-test-helpers#grammar_4_map:
   version "4.0.0"
-  resolved "https://codeload.github.com/standardhealth/shr-test-helpers/tar.gz/763074428e61bf48a33200b34283c0bc805c6e61"
+  resolved "https://codeload.github.com/standardhealth/shr-test-helpers/tar.gz/95490ea25582641cbb92c8a3e0d8572af9428395"
   dependencies:
     shr-models standardhealth/shr-models#grammar_4_map
 
