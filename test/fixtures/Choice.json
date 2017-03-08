@@ -1,3 +1,4 @@
+{ "json":
 {
   "label": "SHR",
   "type": "SHR",
@@ -97,6 +98,13 @@
 	  ]
 	}
 	]
-	}
+	},
+	{ "label": "Value Sets",
+	  "type" : "ValueSets",
+	  "children": []},
+	{ "label": "Code Systems",
+	  "type" : "CodeSystems",
+	  "children": []}
   ]
-}
+},
+"errors": []}
