@@ -50,8 +50,11 @@ To make changing to the shr-json-export project and test them, you will need to 
 npm module. Here are the steps to do that:
 
 $ cd ../shr-json-export/
+
 $ npm link
+
 $ cd ../shr-cli/
+
 $ npm link shr-json-export
 
 Now to run the current json export and test changes made (from the shr-cli project directory):
@@ -61,7 +64,9 @@ $ node cli.js ../shr_spec/spec/ ./out
 When done making changes, restore use of the published version of shr-json-export:
 
 $ cd ../shr-cli
+
 $ npm unlink shr-json-export
+
 $ npm install
 
 # License
