@@ -32,6 +32,38 @@ To encourage quality and consistency within the code base, all code should pass 
 $ npm run lint
 ```
 
+# Running
+
+To enable executing, go to the shr-cli project directory:
+
+$ npm install
+
+To run (while still in shr-cli project directory):
+
+$ node cli.js ../shr-spec/spec ./out
+
+the 2nd argument (../shr-spec/spec) represents the location of the shr spec txt files
+
+# Changing shr-json-export project 
+
+To make changing to the shr-json-export project and test them, you will need to link your local shr-json-export project directory as the current
+npm module. Here are the steps to do that:
+
+$ cd ../shr-json-export/
+$ npm link
+$ cd ../shr-cli/
+$ npm link shr-json-export
+
+Now to run the current json export and test changes made (from the shr-cli project directory):
+
+$ node cli.js ../shr_spec/spec/ ./out
+
+When done making changes, restore use of the published version of shr-json-export:
+
+$ cd ../shr-cli
+$ npm unlink shr-json-export
+$ npm install
+
 # License
 
 Copyright 2016 The MITRE Corporation
