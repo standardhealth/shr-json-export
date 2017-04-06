@@ -1,4 +1,3 @@
-{ "json":
 {
   "label": "SHR",
   "type": "SHR",
@@ -42,5 +41,4 @@
 	  "type" : "CodeSystems",
 	  "children": []}
   ]
-},
-"errors": []}
+}

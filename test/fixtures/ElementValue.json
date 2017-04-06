@@ -1,4 +1,3 @@
-{ "json":
 {
   "label": "SHR",
   "type": "SHR",
@@ -73,5 +72,4 @@
 	  "type" : "CodeSystems",
 	  "children": []}
   ]
-},
-"errors": ["Unsupported code system: 'http://foo.org'"]}
+}
