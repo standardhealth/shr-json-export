@@ -14,6 +14,7 @@
   "type": "DataElement",
   "label": "ForeignElementValue",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [],
   "description": "It is an element with a foreign element value",
@@ -40,6 +41,7 @@
   "type": "DataElement",
   "label": "Simple",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [
     {

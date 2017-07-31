@@ -14,6 +14,7 @@
 		  "type": "DataElement",
 		  "label": "ChoiceOfChoice",
 		  "isEntry": true,
+		  "isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
 		  "description": "It is an element with a choice containing a choice",
@@ -71,9 +72,10 @@
       				"constraints": [
 						{
 							"path": "",
-      						"type": "ValueSetConstraint",
-      						"valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
-      					}
+							"bindingStrength": "REQUIRED",
+							"type": "ValueSetConstraint",
+							"valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
+						}
       				],
 					"identifier": {
       					"label": "code",
