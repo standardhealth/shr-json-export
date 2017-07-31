@@ -14,17 +14,19 @@
           "type": "DataElement",
           "label": "Coded",
           "isEntry": true,
+          "isAbstract": false,
 		  "children" : [],
           "concepts": [],
           "description": "It is a coded element",
           "value": {
       		"constraints": [
       			{
-      				"path": "",
-      				"type": "ValueSetConstraint",
-      				"valueset": "http://standardhealthrecord.org/test/vs/Coded"
-      			}
-      		],
+							"path": "",
+							"bindingStrength": "REQUIRED",
+							"type": "ValueSetConstraint",
+							"valueset": "http://standardhealthrecord.org/test/vs/Coded"
+						}
+					],
       		"identifier": {
       			"label": "code",
       			"namespace": "primitive",
@@ -39,7 +41,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "ElementValue",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
 		  "description": "It is an element with an element value",
@@ -59,7 +62,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "ForeignElementValue",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
 		  "description": "It is an element with a foreign element value",
@@ -79,7 +83,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "Group",
-		  "isEntry": true,
+			"isEntry": true,
+			"isAbstract": false,
 		  "concepts": [
 			{
 			  "label": "Foobar (http://foo.org:bar)",
@@ -171,7 +176,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-		  "isEntry": true,
+			"isEntry": true,
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
 			{
@@ -207,7 +213,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
 			{

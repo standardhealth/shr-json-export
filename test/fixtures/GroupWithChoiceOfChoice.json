@@ -14,15 +14,17 @@
           "type": "DataElement",
           "label": "Coded",
           "isEntry": true,
+          "isAbstract": false,
 		  "children" : [],
           "concepts": [],
           "description": "It is a coded element",
           "value": {
       		"constraints": [
       			{
-      				"path": "",
-      				"type": "ValueSetConstraint",
-      				"valueset": "http://standardhealthrecord.org/test/vs/Coded"
+							"path": "",
+							"bindingStrength": "REQUIRED",
+							"type": "ValueSetConstraint",
+							"valueset": "http://standardhealthrecord.org/test/vs/Coded"
       			}
       		],
       		"identifier": {
@@ -39,7 +41,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "ElementValue",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
 		  "description": "It is an element with an element value",
@@ -59,7 +62,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "ForeignElementValue",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
 		  "description": "It is an element with a foreign element value",
@@ -79,7 +83,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "GroupWithChoiceOfChoice",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "concepts": [],
 		  "description": "It is a group of elements with a choice containing a choice",
 		  "children": [
@@ -162,7 +167,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
 			{
@@ -198,7 +204,8 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-		  "isEntry": true,
+			"isEntry": true, 
+			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
 			{
