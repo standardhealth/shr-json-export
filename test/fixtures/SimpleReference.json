@@ -14,6 +14,7 @@
   "type": "DataElement",
   "label": "SimpleReference",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [],
   "description": "It is a reference to a simple element",

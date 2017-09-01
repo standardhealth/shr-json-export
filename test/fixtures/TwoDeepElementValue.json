@@ -14,6 +14,7 @@
   "type": "DataElement",
   "label": "ElementValue",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [],
   "description": "It is an element with an element value",
@@ -34,6 +35,7 @@
   "type": "DataElement",
   "label": "Simple",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [
     {
@@ -63,6 +65,7 @@
   "type": "DataElement",
   "label": "TwoDeepElementValue",
   "isEntry": true,
+  "isAbstract": false,
   "children" : [],
   "concepts": [],
   "description": "It is an element with a two-deep element value",

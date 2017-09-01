@@ -15,18 +15,20 @@
           "concepts": [],
           "description": "It is a coded element",
           "isEntry": true,
+          "isAbstract": false,
           "label": "Coded",
           "type": "DataElement",
           "value": {
           	"constraints" : [
           		{
-                    "path": "",
-                    "type": "ValueSetConstraint",
- 					"valueset": "http://standardhealthrecord.org/test/vs/Coded"
-          		}
-          	],
+                "path": "",
+                "bindingStrength": "REQUIRED",
+                "type": "ValueSetConstraint",
+                "valueset": "http://standardhealthrecord.org/test/vs/Coded"
+              }
+            ],
             "identifier": {
-            	"label": "code",
+              "label": "code",
                 "namespace": "primitive",
                 "type": "Identifier"
              },
