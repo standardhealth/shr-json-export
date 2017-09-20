@@ -8,8 +8,13 @@ setLogger(err.logger());
 
 describe('#exportToJSON()', commonExportTests(exportSpecifications, importFixture, importErrorsFixture));
 
+function defaultConfiguration()
+{
+  return JSON.parse(fs.readFileSync(`${__dirname}/fixtures/config/defaultConfig.json`, 'utf8'));
+}
+
 function exportSpecifications(specifications) {
-  return exportToJSON(specifications);
+  return exportToJSON(specifications, defaultConfiguration());
 }
 
 function importFixture(name, ext='.json') {
