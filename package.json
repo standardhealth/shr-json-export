@@ -1,6 +1,6 @@
 {
   "name": "shr-json-export",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Exports SHR data elements from SHR models to JSON",
   "author": "",
   "license": "Apache-2.0",
