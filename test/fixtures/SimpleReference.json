@@ -1,6 +1,6 @@
 {
-  "label": "SHR",
-  "type": "SHR",
+  "label": "FOOBAR",
+  "type": "FOOBAR",
   "children": [
     {
       "label": "Namespaces",

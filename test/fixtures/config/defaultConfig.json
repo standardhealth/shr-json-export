@@ -1,0 +1,12 @@
+{
+    "projectName":"The Foo Bar Standard Records",
+    "projectShorthand":"FOOBAR",
+    "projectURL":"http://foobar.com",
+    "publisher":"The Foo Bar Corporation",
+    "contact":[{
+        "telecom": [{
+          "system": "url",
+          "value": "http://foobar.com"
+        }]
+      }]
+}
