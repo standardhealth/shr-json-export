@@ -1,7 +1,11 @@
 const fs = require('fs');
 const err = require('shr-test-helpers/errors');
-const {commonExportTests} = require('shr-test-helpers/export');
+const {sanityCheckModules} = require('shr-models');
+const export_tests = require('shr-test-helpers/export');
+const {commonExportTests} = export_tests;
 const {exportToJSON, setLogger} = require('../lib/export');
+
+sanityCheckModules({ 'shr-test-helpers': export_tests });
 
 // Set the logger -- this is needed for detecting and checking errors
 setLogger(err.logger());
