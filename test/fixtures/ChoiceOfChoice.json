@@ -83,7 +83,8 @@
 						"type": "Identifier"
 					},
 					"label": "primitive:code",
-      				"min": 0,
+							"max": 1,
+							"min": 1,
       				"type": "IdentifiableValue"
 				}
 			]

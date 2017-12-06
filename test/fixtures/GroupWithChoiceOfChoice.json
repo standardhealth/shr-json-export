@@ -41,7 +41,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "ElementValue",
-			"isEntry": true, 
+			"isEntry": true,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
@@ -62,7 +62,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "ForeignElementValue",
-			"isEntry": true, 
+			"isEntry": true,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
@@ -83,10 +83,62 @@
 		{
 		  "type": "DataElement",
 		  "label": "GroupWithChoiceOfChoice",
-			"isEntry": true, 
+			"isEntry": true,
 			"isAbstract": false,
 		  "concepts": [],
-		  "description": "It is a group of elements with a choice containing a choice",
+			"description": "It is a group of elements with a choice containing a choice",
+			"value": {
+				"constraints": [],
+		"max": 2,
+		"min": 0,
+				"type": "ChoiceValue",
+				"value": [
+			{
+				"constraints": [],
+						"identifier": {
+							"label": "Simple",
+							"namespace": "shr.other.test",
+					"type": "Identifier"
+				},
+				"label": "shr.other.test:Simple",
+				"max": 1,
+						"min": 1,
+						"type": "IdentifiableValue"
+			 },
+					{
+						"constraints": [],
+						"min": 1,
+						"max": 1,
+				"type": "ChoiceValue",
+						"value": [
+							{
+								"constraints": [],
+								"identifier": {
+							"label": "ForeignElementValue",
+									"namespace": "shr.test",
+									"type": "Identifier"
+								},
+								"label": "shr.test:ForeignElementValue",
+								"min": 1,
+								"max": 1,
+								"type": "IdentifiableValue"
+							},
+							{
+								"constraints": [],
+								"identifier": {
+									"label": "ElementValue",
+									"namespace": "shr.test",
+									"type": "Identifier"
+								},
+								"label": "shr.test:ElementValue",
+								"min": 1,
+								"max": 1,
+								"type": "IdentifiableValue"
+							}
+						]
+					}
+				]
+				},
 		  "children": [
             {
       			"constraints": [],
@@ -111,63 +163,13 @@
 				"max": 1,
 				"min": 0,
 				"type": "IdentifiableValue"
-            },
-            {
-      			"constraints": [],
-				"max": 2,
-				"min": 0,
-      			"type": "ChoiceValue",
-      			"value": [
-					{
-						"constraints": [],
-      					"identifier": {
-      						"label": "Simple",
-      						"namespace": "shr.other.test",
-							"type": "Identifier"
-						},
-						"label": "shr.other.test:Simple",
-						"max": 1,
-      					"min": 1,
-      					"type": "IdentifiableValue"
- 					},
-      				{
-      					"constraints": [],
-      					"min": 1,
-      					"max": 1,
-						"type": "ChoiceValue",
-      					"value": [
-      						{
-      							"constraints": [],
-      							"identifier": {
-									"label": "ForeignElementValue",
-      								"namespace": "shr.test",
-      								"type": "Identifier"
-      							},
-      							"label": "shr.test:ForeignElementValue",
-      							"min": 1,
-      							"type": "IdentifiableValue"
-      						},
-      						{
-      							"constraints": [],
-      							"identifier": {
-      								"label": "ElementValue",
-      								"namespace": "shr.test",
-      								"type": "Identifier"
-      							},
-      							"label": "shr.test:ElementValue",
-      							"min": 1,
-      							"type": "IdentifiableValue"
-      						}
-      					]
-      				}
-      			]
             }
 		  ]
 		},
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true, 
+			"isEntry": true,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
@@ -204,7 +206,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true, 
+			"isEntry": true,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
