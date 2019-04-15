@@ -28,11 +28,11 @@
 						}
       		],
       		"identifier": {
-      			"label": "code",
+      			"label": "concept",
       			"namespace": "primitive",
       			"type": "Identifier"
       		},
-			"label": "primitive:code",
+			"label": "primitive:concept",
       		"max": 1,
 			"min": 1,
 			"type": "IdentifiableValue"
