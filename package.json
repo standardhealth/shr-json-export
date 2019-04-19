@@ -11,6 +11,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec --recursive",
+    "test:fix": "FIX_TEST_ERRORS=true ./node_modules/.bin/mocha --reporter spec --recursive",
     "test:watch": "npm test -- --watch",
     "test:debug": "./node_modules/.bin/mocha --inspect --debug-brk --reporter spec --recursive",
     "lint": "./node_modules/.bin/eslint .",
