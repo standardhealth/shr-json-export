@@ -13,7 +13,7 @@
 {
   "type": "DataElement",
   "label": "ForeignElementValue",
-  "isEntry": true,
+  "isEntry": false,
   "isAbstract": false,
   "children" : [],
   "concepts": [],
@@ -40,7 +40,7 @@
 {
   "type": "DataElement",
   "label": "Simple",
-  "isEntry": true,
+  "isEntry": false,
   "isAbstract": false,
   "children" : [],
   "concepts": [

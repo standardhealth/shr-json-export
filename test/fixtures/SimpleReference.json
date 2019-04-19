@@ -7,39 +7,73 @@
       "type": "Namespaces",
       "children": [
         {
-      "label": "shr.test",
-      "type": "Namespace",
-      "children": [
-{
-  "type": "DataElement",
-  "label": "SimpleReference",
-  "isEntry": true,
-  "isAbstract": false,
-  "children" : [],
-  "concepts": [],
-  "description": "It is a reference to a simple element",
-  "value": {
-  	"constraints": [],
-    "label": "reference to shr.test:Simple",
- 	"max": 1,
-    "min": 1,
- 	"type": "RefValue",
-	"identifier": {
-	  "label": "Simple",
-	  "type": "Identifier",
-	  "namespace": "shr.test"
-	}
-  }
-}
-	  ]
-	}
-	]
-	},
-	{ "label": "Value Sets",
-	  "type" : "ValueSets",
-	  "children": []},
-	{ "label": "Code Systems",
-	  "type" : "CodeSystems",
-	  "children": []}
+          "label": "shr.test",
+          "type": "Namespace",
+          "children": [
+            {
+              "type": "DataElement",
+              "label": "Simple",
+              "isEntry": true,
+              "isAbstract": false,
+              "concepts": [
+                {
+                  "label": "Foobar (http://foo.org:bar)",
+                  "type": "Concept",
+                  "system": "http://foo.org",
+                  "code": "bar",
+                  "display": "Foobar",
+                  "url": "http://foo.org/bar"
+                }
+              ],
+              "description": "It is a simple element",
+              "value": {
+                "min": 1,
+                "max": 1,
+                "constraints": [],
+                "type": "IdentifiableValue",
+                "label": "primitive:string",
+                "identifier": {
+                  "label": "string",
+                  "type": "Identifier",
+                  "namespace": "primitive"
+                }
+              },
+              "children": []
+            },
+            {
+              "type": "DataElement",
+              "label": "SimpleReference",
+              "isEntry": false,
+              "isAbstract": false,
+              "concepts": [],
+              "description": "It is a reference to a simple element",
+              "value": {
+                "min": 1,
+                "max": 1,
+                "constraints": [],
+                "type": "IdentifiableValue",
+                "label": "shr.test:Simple",
+                "identifier": {
+                  "label": "Simple",
+                  "type": "Identifier",
+                  "namespace": "shr.test"
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Value Sets",
+      "type": "ValueSets",
+      "children": []
+    },
+    {
+      "label": "Code Systems",
+      "type": "CodeSystems",
+      "children": []
+    }
   ]
 }

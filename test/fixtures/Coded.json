@@ -14,7 +14,7 @@
        	  "children": [],
           "concepts": [],
           "description": "It is a coded element",
-          "isEntry": true,
+          "isEntry": false,
           "isAbstract": false,
           "label": "Coded",
           "type": "DataElement",

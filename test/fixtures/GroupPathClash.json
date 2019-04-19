@@ -13,7 +13,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "GroupPathClash",
-			"isEntry": true, 
+			"isEntry": false,
 			"isAbstract": false,
 		  "concepts": [],
 		  "description": "It is a group of elements with clashing names",
@@ -47,7 +47,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true, 
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
@@ -84,7 +84,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true, 
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [

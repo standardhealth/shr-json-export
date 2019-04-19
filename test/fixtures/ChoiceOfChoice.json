@@ -13,7 +13,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "ChoiceOfChoice",
-		  "isEntry": true,
+		  "isEntry": false,
 		  "isAbstract": false,
 		  "children" : [],
 		  "concepts": [],

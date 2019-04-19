@@ -13,7 +13,7 @@
         {
           "type": "DataElement",
           "label": "Coded",
-          "isEntry": true,
+          "isEntry": false,
           "isAbstract": false,
 		  "children" : [],
           "concepts": [],
@@ -41,7 +41,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "ElementValue",
-			"isEntry": true,
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
@@ -62,7 +62,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "ForeignElementValue",
-			"isEntry": true,
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [],
@@ -83,7 +83,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "GroupWithChoiceOfChoice",
-			"isEntry": true,
+			"isEntry": false,
 			"isAbstract": false,
 		  "concepts": [],
 			"description": "It is a group of elements with a choice containing a choice",
@@ -169,7 +169,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true,
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [
@@ -206,7 +206,7 @@
 		{
 		  "type": "DataElement",
 		  "label": "Simple",
-			"isEntry": true,
+			"isEntry": false,
 			"isAbstract": false,
 		  "children" : [],
 		  "concepts": [

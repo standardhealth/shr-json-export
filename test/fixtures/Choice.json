@@ -13,7 +13,7 @@
 						{
 							"type": "DataElement",
 							"label": "Choice",
-							"isEntry": true,
+							"isEntry": false,
 							"isAbstract": false,
 							"children": [],
 							"concepts": [],
@@ -73,7 +73,7 @@
 						{
 							"concepts": [],
 							"description": "It is a coded element",
-							"isEntry": true,
+							"isEntry": false,
 							"isAbstract": false,
 							"children": [],
 							"label": "Coded",
