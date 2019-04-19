@@ -1,104 +1,108 @@
 {
-  "label": "FOOBAR",
-  "type": "FOOBAR",
-  "children": [
-    {
-      "label": "Namespaces",
-      "type": "Namespaces",
-      "children": [
-        {
-      "label": "shr.test",
-      "type": "Namespace",
-      "children": [
+	"label": "FOOBAR",
+	"type": "FOOBAR",
+	"children": [
 		{
-		  "type": "DataElement",
-		  "label": "ChoiceOfChoice",
-		  "isEntry": false,
-		  "isAbstract": false,
-		  "children" : [],
-		  "concepts": [],
-		  "description": "It is an element with a choice containing a choice",
-		  "value": {
-			"constraints" : [],
-		    "max": 1,
-		    "min": 1,
-		    "type": "ChoiceValue",
-			"value": [
-      			{
-      				"constraints": [],
-      				"identifier": {
-      					"label": "string",
-      					"namespace": "primitive",
-      					"type": "Identifier"
-      				},
-      				"label": "primitive:string",
-      				"max": 1,
-      				"min": 1,
-      				"type": "IdentifiableValue"
-      			},
-      			{
-      				"constraints": [],
-					"max": 1,
-					"min": 1,
-      				"type": "ChoiceValue",
-      				"value": [
-      					{
-      						"constraints": [],
-      						"identifier": {
-								"label": "integer",
-      							"namespace": "primitive",
-      							"type": "Identifier"
-      						},
-      						"label": "primitive:integer",
-      						"max": 1,
-      						"min": 1,
-      						"type": "IdentifiableValue"
-      					},
-      					{
-      						"constraints": [],
-      						"identifier": {
-      							"label": "decimal",
-      							"namespace": "primitive",
-      							"type": "Identifier"
-      						},
-      						"label": "primitive:decimal",
-      						"max": 1,
-      						"min": 1,
-      						"type": "IdentifiableValue"
-      					}
-      				]
-      			},
+			"label": "Namespaces",
+			"type": "Namespaces",
+			"children": [
 				{
-      				"constraints": [
+					"label": "shr.test",
+					"type": "Namespace",
+					"children": [
 						{
-							"path": "",
-							"bindingStrength": "REQUIRED",
-							"type": "ValueSetConstraint",
-							"valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
+							"type": "DataElement",
+							"label": "ChoiceOfChoice",
+							"isEntry": false,
+							"isAbstract": false,
+							"children": [],
+							"concepts": [],
+							"description": "It is an element with a choice containing a choice",
+							"value": {
+								"constraints": [],
+								"max": 1,
+								"min": 1,
+								"type": "ChoiceValue",
+								"value": [
+									{
+										"constraints": [],
+										"identifier": {
+											"label": "string",
+											"namespace": "primitive",
+											"type": "Identifier"
+										},
+										"label": "primitive:string",
+										"max": 1,
+										"min": 1,
+										"type": "IdentifiableValue"
+									},
+									{
+										"constraints": [],
+										"max": 1,
+										"min": 1,
+										"type": "ChoiceValue",
+										"value": [
+											{
+												"constraints": [],
+												"identifier": {
+													"label": "integer",
+													"namespace": "primitive",
+													"type": "Identifier"
+												},
+												"label": "primitive:integer",
+												"max": 1,
+												"min": 1,
+												"type": "IdentifiableValue"
+											},
+											{
+												"constraints": [],
+												"identifier": {
+													"label": "decimal",
+													"namespace": "primitive",
+													"type": "Identifier"
+												},
+												"label": "primitive:decimal",
+												"max": 1,
+												"min": 1,
+												"type": "IdentifiableValue"
+											}
+										]
+									},
+									{
+										"constraints": [
+											{
+												"path": "",
+												"bindingStrength": "REQUIRED",
+												"type": "ValueSetConstraint",
+												"valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
+											}
+										],
+										"identifier": {
+											"label": "concept",
+											"namespace": "primitive",
+											"type": "Identifier"
+										},
+										"label": "primitive:concept",
+										"max": 1,
+										"min": 1,
+										"type": "IdentifiableValue"
+									}
+								]
+							}
 						}
-      				],
-					"identifier": {
-      					"label": "concept",
-						"namespace": "primitive",
-						"type": "Identifier"
-					},
-					"label": "primitive:concept",
-							"max": 1,
-							"min": 1,
-      				"type": "IdentifiableValue"
+					]
 				}
 			]
-		  }
+		},
+		{
+			"label": "Value Sets",
+			"type": "ValueSets",
+			"children": []
+		},
+		{
+			"label": "Code Systems",
+			"type": "CodeSystems",
+			"children": []
 		}
-	  ]
-	}
 	]
-	},
-	{ "label": "Value Sets",
-	  "type" : "ValueSets",
-	  "children": []},
-	{ "label": "Code Systems",
-	  "type" : "CodeSystems",
-	  "children": []}
-  ]
 }
