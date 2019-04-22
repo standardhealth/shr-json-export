@@ -43,7 +43,7 @@
             {
               "type": "DataElement",
               "label": "SimpleReference",
-              "isEntry": false,
+              "isEntry": true,
               "isAbstract": false,
               "concepts": [],
               "description": "It is a reference to a simple element",

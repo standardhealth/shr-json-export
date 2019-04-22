@@ -1,116 +1,116 @@
 {
-	"label": "FOOBAR",
-	"type": "FOOBAR",
-	"children": [
-		{
-			"label": "Namespaces",
-			"type": "Namespaces",
-			"children": [
-				{
-					"label": "shr.test",
-					"type": "Namespace",
-					"children": [
-						{
-							"type": "DataElement",
-							"label": "Choice",
-							"isEntry": false,
-							"isAbstract": false,
-							"children": [],
-							"concepts": [],
-							"description": "It is an element with a choice",
-							"value": {
-								"constraints": [],
-								"max": 1,
-								"min": 1,
-								"type": "ChoiceValue",
-								"value": [
-									{
-										"label": "primitive:string",
-										"max": 1,
-										"min": 1,
-										"type": "IdentifiableValue",
-										"constraints": [],
-										"identifier": {
-											"label": "string",
-											"type": "Identifier",
-											"namespace": "primitive"
-										}
-									},
-									{
-										"constraints": [
-											{
-												"path": "",
-												"bindingStrength": "REQUIRED",
-												"type": "ValueSetConstraint",
-												"valueset": "http://standardhealthrecord.org/test/vs/CodeChoice"
-											}
-										],
-										"identifier": {
-											"label": "concept",
-											"namespace": "primitive",
-											"type": "Identifier"
-										},
-										"label": "primitive:concept",
-										"max": 1,
-										"min": 1,
-										"type": "IdentifiableValue"
-									},
-									{
-										"constraints": [],
-										"identifier": {
-											"label": "Coded",
-											"namespace": "shr.test",
-											"type": "Identifier"
-										},
-										"label": "shr.test:Coded",
-										"max": 1,
-										"min": 1,
-										"type": "IdentifiableValue"
-									}
-								]
-							}
-						},
-						{
-							"concepts": [],
-							"description": "It is a coded element",
-							"isEntry": false,
-							"isAbstract": false,
-							"children": [],
-							"label": "Coded",
-							"type": "DataElement",
-							"value": {
-								"constraints": [
-									{
-										"path": "",
-										"bindingStrength": "REQUIRED",
-										"type": "ValueSetConstraint",
-										"valueset": "http://standardhealthrecord.org/test/vs/Coded"
-									}
-								],
-								"identifier": {
-									"label": "concept",
-									"namespace": "primitive",
-									"type": "Identifier"
-								},
-								"label": "primitive:concept",
-								"max": 1,
-								"min": 1,
-								"type": "IdentifiableValue"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"label": "Value Sets",
-			"type": "ValueSets",
-			"children": []
-		},
-		{
-			"label": "Code Systems",
-			"type": "CodeSystems",
-			"children": []
-		}
-	]
+  "label": "FOOBAR",
+  "type": "FOOBAR",
+  "children": [
+    {
+      "label": "Namespaces",
+      "type": "Namespaces",
+      "children": [
+        {
+          "label": "shr.test",
+          "type": "Namespace",
+          "children": [
+            {
+              "type": "DataElement",
+              "label": "Choice",
+              "isEntry": true,
+              "isAbstract": false,
+              "concepts": [],
+              "description": "It is an element with a choice",
+              "value": {
+                "min": 1,
+                "max": 1,
+                "constraints": [],
+                "type": "ChoiceValue",
+                "value": [
+                  {
+                    "min": 1,
+                    "max": 1,
+                    "constraints": [],
+                    "type": "IdentifiableValue",
+                    "label": "primitive:string",
+                    "identifier": {
+                      "label": "string",
+                      "type": "Identifier",
+                      "namespace": "primitive"
+                    }
+                  },
+                  {
+                    "min": 1,
+                    "max": 1,
+                    "constraints": [
+                      {
+                        "type": "ValueSetConstraint",
+                        "valueset": "http://standardhealthrecord.org/test/vs/CodeChoice",
+                        "bindingStrength": "REQUIRED",
+                        "path": ""
+                      }
+                    ],
+                    "type": "IdentifiableValue",
+                    "label": "primitive:concept",
+                    "identifier": {
+                      "label": "concept",
+                      "type": "Identifier",
+                      "namespace": "primitive"
+                    }
+                  },
+                  {
+                    "min": 1,
+                    "max": 1,
+                    "constraints": [],
+                    "type": "IdentifiableValue",
+                    "label": "shr.test:Coded",
+                    "identifier": {
+                      "label": "Coded",
+                      "type": "Identifier",
+                      "namespace": "shr.test"
+                    }
+                  }
+                ]
+              },
+              "children": []
+            },
+            {
+              "type": "DataElement",
+              "label": "Coded",
+              "isEntry": false,
+              "isAbstract": false,
+              "concepts": [],
+              "description": "It is a coded element",
+              "value": {
+                "min": 1,
+                "max": 1,
+                "constraints": [
+                  {
+                    "type": "ValueSetConstraint",
+                    "valueset": "http://standardhealthrecord.org/test/vs/Coded",
+                    "bindingStrength": "REQUIRED",
+                    "path": ""
+                  }
+                ],
+                "type": "IdentifiableValue",
+                "label": "primitive:concept",
+                "identifier": {
+                  "label": "concept",
+                  "type": "Identifier",
+                  "namespace": "primitive"
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Value Sets",
+      "type": "ValueSets",
+      "children": []
+    },
+    {
+      "label": "Code Systems",
+      "type": "CodeSystems",
+      "children": []
+    }
+  ]
 }
