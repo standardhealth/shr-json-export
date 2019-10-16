@@ -1,3 +1,7 @@
+> # Deprecated
+>
+> **The shr-json-export repo has been deprecated and is no longer used or maintained.**
+
 # SHR JSON Export
 
 The Standard Health Record (SHR) initiative is working to create a single, high-quality health record for every individual in the United States.  For more information, see [standardhealthrecord.org](http://standardhealthrecord.org/).
@@ -44,7 +48,7 @@ $ node cli.js ../shr-spec/spec ./out
 
 the 2nd argument (../shr-spec/spec) represents the location of the shr spec txt files
 
-# Changing shr-json-export project 
+# Changing shr-json-export project
 
 To make changing to the shr-json-export project and test them, you will need to link your local shr-json-export project directory as the current
 npm module. Here are the steps to do that:
